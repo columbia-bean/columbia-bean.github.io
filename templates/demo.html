@@ -4,6 +4,11 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="static/helpers.js"></script>  
+
 </head>
 
 <body>
@@ -52,25 +57,28 @@
 {% endif %}
 </div>
 
-<div class="container description">
+<!-- <div class="container description">
   Description
-</div>
+</div> -->
 
 <div class = "container cellbuttons">
   <div class="row text-center">
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Apoptosis</div>
+    <div class="col"><button type="button" onclick="loadButtons('apoptosis')" class="btn btn-lg btn-outline-secondary col-xs-2">Apoptosis</div>
     
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Mitosis</div>
+    <div class="col"><button type="button" onclick="loadButtons('mitosis')" class="btn btn-lg btn-outline-secondary col-xs-2">Mitosis</div>
 
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Lumen</div>
+    <div class="col"><button type="button" onclick="loadButtons('lumen')" class="btn btn-lg btn-outline-secondary col-xs-2">Lumen</div>
     
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Non-Lumen</div>
+    <div class="col"><button type="button" onclick="loadButtons('nonlumen')" class="btn btn-lg btn-outline-secondary col-xs-2">Non-Lumen</div>
     
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Tumor</div>
+    <div class="col"><button type="button" onclick="loadButtons('tumor')" class="btn btn-lg btn-outline-secondary col-xs-2">Tumor</div>
  
-    <div class="col"><button type="button" class="btn btn-lg btn-outline-secondary col-xs-2">Non-Tumor</div>
+    <div class="col"><button type="button" onclick="loadButtons('nontumor')" class="btn btn-lg btn-outline-secondary col-xs-2">Non-Tumor</div>
       
  </div>
+</div>
+
+<div id="parent" class="container description">
 </div>
 
 </body>
